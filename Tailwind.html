@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find & Search Your Favourite Doctor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      // SUGESTÃO: Configuração para usar a fonte customizada com o CDN
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['IBM Plex Sans', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <style type="text/tailwindcss">
+      body {
+        /* Aplica a fonte diretamente via CSS para garantir */
+        font-family: 'IBM Plex Sans', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <nav class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-800 first-letter:text-black">E-sheba</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-600 hover:text-blue-800">Home</a>
+                <a href="#" class="text-gray-600 hover:text-blue-800">About</a>
+                <a href="#" class="text-gray-600 hover:text-blue-800">Application</a>
+                <a href="#" class="text-gray-600 hover:text-blue-800">History</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-gray-600 hover:text-blue-800 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden md:flex items-center space-x-4">
+               <a href="#" class="px-4 py-2 text-gray-600 hover:text-blue-800">Log in</a>
+                <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700">Sign up</a>
+            </div>
+        </div>
+     </nav>
+    <main>
+        <div class="container mx-auto px-6 pt-12">
+            <div class="flex flex-col md:flex-row items-center">
+                 <div class="md:w-1/2">
+                    <img src="scents/Find & Search Your Favourite Doctor.png" alt="Find and Search Your Favourite Doctor" class="w-full max-w-md mb-6">
+                    <img src="scents/Vector 5.png" alt="underline Favourite" class="w-15 max-w-md mb-6">
+
+                    <p class="text-gray-600 mb-8 max-w-md">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.
+                    </p>
+                 </div>
+
+                 <div class="md:w-1/2 flex items-center justify-center mt-8 md:mt-0">
+                     <img src="https://placehold.co/500x550/E2E8F0/A0AEC0" alt="Ilustração de um médico" class="rounded-lg shadow-lg">
+                 </div>
+
+            </div>
+        </div>
+         <div class="relative mt-[-5rem] md:mt-[-4rem]">
+             <div class="relative z-20 container mx-auto px-6">
+                <form class="flex items-center w-full max-w-2xl mx-auto p-2 space-x-4 bg-white border border-gray-200 rounded-full shadow-lg">
+
+                    <div class="flex items-center flex-1 pl-2">
+                        <svg class="w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" /></svg>
+                        <input type="text" placeholder="Doctor's Name" class="w-full ml-2 bg-transparent focus:outline-none focus:ring-0 placeholder-gray-500">
+                        <svg class="w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                    </div>
+
+                    <div class="border-l border-gray-300 h-7">
+                        <div class="flex items-center flex-1">
+                            <svg class="w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>
+                            <input type="text" placeholder="Location" class="w-full ml-2 bg-transparent focus:outline-none focus:ring-0 placeholder-gray-500">
+                            <svg class="w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                        </div>
+                    </div>
+                    <button type="submit" class="p-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 focus:outline-none flex-shrink-0">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                    </button>
+                </form>
+             </div>
+
+            <div class="absolute top-1/2 left-0 w-full bg-blue-600 z-10">
+                 <div class="container mx-auto flex justify-around items-center divide-x divide-white/60 text-white h-24">
+                    <div class="text-center px-6">
+                        <div class="text-2xl font-bold">24/7</div>
+                        <div class="text-sm">Online Support</div>
+                    </div>
+                    <div class="text-center px-6">
+                        <div class="text-2xl font-bold">100+</div>
+                        <div class="text-sm">Doctors</div>
+                    </div>
+                    <div class="text-center px-6">
+                        <div class="text-2xl font-bold">1M+</div>
+                        <div class="text-sm">Active Patients</div>
+                    </div>
+                 </div>
+            </div>
+
+         </div>
+    </main>
+    <section class="bg-slate-50 py-20">
+
+       <div class="container mx-auto px-6">
+
+          <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
+            Our Consulting Specialists
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <div class="bg-white p-8 rounded-lg border border-gray-200 text-center shadow-sm">
+              <div class="inline-block p-4 bg-blue-100 rounded-full mb-4">
+                <img>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Covid-19 Test</h3>
+              <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+          </div>
+
+           <div class="bg-blue-600 p-8 rounded-lg text-center shadow-lg transform scale-105">
+            <div class="inline-block p-4 bg-white/20 rounded-full mb-4">
+              <img>
+            </div>
+             <h3 class="text-xl font-semibold text-white mb-2">Heart Lungs</h3>
+             <p class="text-blue-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+           </div>
+
+           <div class="bg-white p-8 rounded-lg border border-gray-200 text-center shadow-sm">
+            <div class="inline-block p-4 bg-blue-100 rounded-full mb-4">
+              <img>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Suppliment</h3>
+            <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+           </div>
+
+           <div class="bg-white p-8 rounded-lg border border-gray-200 text-center shadow-sm">
+            <div class="inline-block p-4 bg-blue-100 rounded-full mb-4">
+              <img>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Mental Health</h3>
+             <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+           </div>
+
+       </div>
+    </section>
+  </body>
+</html>
